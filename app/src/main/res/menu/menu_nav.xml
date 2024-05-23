@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group>
+
+        <item android:id="@+id/loaiSanPham"
+            android:title="Loại sản phẩm" android:icon="@drawable/icon_loai_sp"/>
+        <item android:id="@+id/SanPham"
+            android:title="Sản phẩm" android:icon="@drawable/icon_san_pham"/>
+        <item android:id="@+id/phieuXuatKho"
+            android:title="Phiếu xuất kho" android:icon="@drawable/icon_phieu_xuat"/>
+        <item android:id="@+id/phieuNhapKho"
+            android:title="Phiếu nhập kho" android:icon="@drawable/icon_phieu_nhap"/>
+        <item android:id="@+id/ThongKe"
+            android:title="Thống kê" android:icon="@drawable/icon_thong_ke"/>
+        <item android:id="@+id/QuanlyTv"
+            android:title="Quản lý thành viên" android:icon="@drawable/icon_quan_ly_thanh_vien"/>
+
+
+
+    </group>
+    <group android:checkableBehavior="single">
+            <item android:title="Khác">
+                <menu>
+                    <item android:id="@+id/doiMatKhau"
+                        android:title="Đổi mật khẩu" android:icon="@drawable/icon_doi_mk"/>
+                    <item android:id="@+id/dangxuat"
+                        android:title="Đăng xuất" android:icon="@drawable/icon_dang_xuat"/>
+                    <item android:id="@+id/Thoat"
+                        android:title="Thoát" android:icon="@drawable/icon_thoat"/>
+                </menu>
+            </item>
+    </group>
+
+
+</menu>
