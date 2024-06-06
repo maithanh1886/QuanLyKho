@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/style_dialog_add_loai_sp"
+    >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm thông tin phiếu nhập"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ffff"
+                android:background="@drawable/style_dialog_add_loai_sp2"
+                android:padding="18dp"
+                android:fontFamily="serif"
+
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:padding="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên nhân viên "
+                    android:textSize="18dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/dialog_tennv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sản phẩm"
+                    android:textSize="18dp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/SpTenSpPhieuNhapThem"
+
+
+                    android:background="@drawable/style_ed_dialog_loaisp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số lượng"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edSoLuongSPPhieuNhapThem"
+
+
+                    android:hint="Nhập số sản phẩm"
+                    android:padding="15dp"
+                    android:background="@drawable/style_ed_dialog_loaisp"
+                    android:fontFamily="serif"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày nhập"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvNgayXuatPhieuNhapThem"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:hint="Ngày nhập"
+                    android:padding="15dp"
+                    android:fontFamily="serif"
+                    android:background="@drawable/style_ed_dialog_loaisp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginBottom="10dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/btnThemPhieuNhap"
+
+                android:text="Thêm"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:background="#03A9F4"
+                android:fontFamily="serif"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/btnHuyLayouThemPhieuNhap"
+
+
+                android:layout_marginLeft="30dp"
+
+                android:text="Hủy"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:background="@android:color/darker_gray"
+                android:fontFamily="serif"
+
+                />
+        </LinearLayout>
+
+
+
+</LinearLayout>
