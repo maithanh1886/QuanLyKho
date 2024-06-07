@@ -6,5 +6,73 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#00BCD4"
     tools:context=".fragment.PhieuXuat">
+    <LinearLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
 
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layoutOne"
+        android:id="@+id/layoutMid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/style_layout_middle"
+        android:layout_marginTop="25dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvDanhSachPhieuXuatKho"
+                />
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Float_add_Phieu_xuat_kho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#00BCD4"
+            android:src="@drawable/img_add"
+            app:tint="#fff"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/layoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/style_ed_loaisp"
+        android:orientation="horizontal">
+        <EditText
+            android:background="@drawable/style_ed_loaisp"
+            android:id="@+id/edTimKiemPhieuSuatKho"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Tìm kiếm ..."
+            android:fontFamily="serif"
+            />
+        <ImageButton
+            android:id="@+id/btn_phieuxk_timkiem"
+            android:layout_weight="1"
+            android:layout_width="60dp"
+            android:background="@drawable/style_ed_loaisp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_tim_kiem"/>
+    </LinearLayout>
 </RelativeLayout>

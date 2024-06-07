@@ -1,4 +1,4 @@
-package com.example.quanlykho.fragment;
+package com.example.quanlykho.data;
 
 import android.annotation.SuppressLint;
 import android.content.ContentValues;

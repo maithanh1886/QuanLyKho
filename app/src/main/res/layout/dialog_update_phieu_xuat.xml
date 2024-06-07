@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/style_dialog_add_loai_sp"
+    >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sửa thông tin phiếu xuất"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#ffff"
+                android:background="@drawable/style_dialog_add_loai_sp2"
+                android:padding="18dp"
+                android:fontFamily="serif"
+                />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginHorizontal="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên sp "
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/SpTenSpPhieuXuatSua"
+
+
+                    android:background="@drawable/style_ed_dialog_loaisp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số lượng"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/edSoLuongSPPhieuXuatSua"
+
+
+                    android:hint="Nhập số sản phẩm"
+                    android:padding="15dp"
+                    android:background="@drawable/style_ed_dialog_loaisp"
+                    android:fontFamily="serif"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày xuất"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/tvNgayXuatPhieuXuatSua"
+
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:inputType="none"
+                    android:focusable="false"
+
+                    android:hint="Nhập ngày xuất"
+                    android:padding="15dp"
+                    android:background="@drawable/style_ed_dialog_loaisp"
+                    android:fontFamily="serif"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/btnSuaPhieuXuat"
+
+                android:text="Sửa"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:background="#03A9F4"
+                android:fontFamily="serif"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/btnHuyLayouSuaPhieuXuat"
+
+
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:text="Hủy"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:background="@android:color/darker_gray"
+                android:fontFamily="serif"
+
+                />
+        </LinearLayout>
+
+
+
+</LinearLayout>
