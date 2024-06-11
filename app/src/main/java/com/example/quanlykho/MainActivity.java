@@ -7,7 +7,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -24,6 +23,8 @@ import com.example.quanlykho.fragment.PhieuXuat;
 import com.example.quanlykho.fragment.QuanLyThanhVien;
 import com.example.quanlykho.fragment.ThongKe;
 import com.google.android.material.navigation.NavigationView;
+
+import org.jetbrains.annotations.NotNull;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -83,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    public boolean onNavigationItemSelected(@NotNull MenuItem item) {
         setTitle(item.getTitle());
         if (item.getItemId() == R.id.SanPham) {
             drawerLayout.close();
